@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>JS Practice | Mysite.com</title>
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="logo_content">
+            <div class="logo">
+                <i class='bx bxl-steam'></i>
+                <div class="logo_name heading-2">JS Apps</div>
+            </div>
+            <i class='bx bx-menu' id="btn"></i>
+        </div>
+        <ul class="nav_list">
+            <li>
+                <i class='bx bx-search' ></i>
+                <input type="text" placeholder="Search...">
+                <span class="tool">Search</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-grid-alt' ></i>
+                    <span class="list_name">Dashboard</span>
+                </a>
+                <span class="tool">Dashboard</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-user'></i>
+                    <span class="list_name">User</span>
+                </a>
+                <span class="tool">User</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-message-dots'></i>
+                    <span class="list_name">Messages</span>
+                </a>
+                <span class="tool">Messages</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-file'></i>
+                    <span class="list_name">File Manager</span>
+                </a>
+                <span class="tool">File Manager</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-cog'></i>
+                    <span class="list_name">Settings</span>
+                </a>
+                <span class="tool">Settings</span>
+            </li>
+        </ul>
+        <div class="profile_section">
+            <div class="profile">
+                <div class="profile_detail">
+                <img src="./JS Projects/Logo2.PNG" alt="pic">
+                <div class="name_job">
+                    <div class="name">Yash J</div>
+                    <div class="passion">Front-End Dev</div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="sidebar.js"></script>
+    <div class="rest">
+        <div id="container">
+            <h1 class="heading">COUNTER</h1>
+            <h2 id="count">0</h2>
+            <div id="btn">
+                <button class="butn" id="decrease" onclick="decrease()">DECREASE</button>
+                <button class="butn" id="reset" onclick="reset()">RESET</button>
+                <button class="butn" id="increase" onclick="increase()">INCREASE</button>
+            </div>
+        </div>
+        <script src="counter.js"></script>
+        <div id="container">
+            <h1 class="heading">COLOR PICKER</h1>
+            <h2 id="info" class="heading-2">Background Color: <span id="color" class="color-id">
+                #FFFFFF
+            </span>                
+            </h2>
+            <button class="butn" id="pick">Click me!</button>
+            <script src="color-flipper.js"></script>
+        </div>
+    </div>
+</body>
+
+</html>
